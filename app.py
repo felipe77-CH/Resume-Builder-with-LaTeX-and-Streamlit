@@ -16,6 +16,7 @@ NAME = "Felipe Ignacio Muñoz Toledo"
 DESCRIPTION = """
 Chemical Engineer with an MSc in Computational Mechanics, offering specialized consultancy services in modeling, simulation, and process optimization. I have solid experience in environmental project management, process innovation, and advanced computational simulations. Currently, I lead environmental sanitation projects at Destra, managing teams, prioritizing tasks, and solving technical challenges, while developing process diagrams, technical documentation, and construction plans for industrial effluent treatment plants, including aerobic systems, dissolved air flotation (DAF), and membrane technologies. I have contributed to the successful implementation of leachate treatment plants and am developing patentable technologies aimed at nutrient recovery.
 """
+SUBTITLE="Digital CV | FELIPE IGNACIO MUNHOZ TOLEDO"
 
 EMAIL = "felipe.toledo@coc.ufrj.br"
 
@@ -41,10 +42,11 @@ profile_pic = Image.open(profile_pic)
 col1, col2 = st.columns([1, 3], gap="small") 
 
 with col1:
-    st.image(profile_pic, width=250)
+    st.image(profile_pic, width=300)
 
 with col2:
     st.title(NAME)
+    st.markdown("<h4 style='font-size:22px;'> MSc. Computational Mechanics | Process Modeling & Optimization | Data Scientist </h4>", unsafe_allow_html=True)
     st.write(DESCRIPTION)
     st.download_button(
         label=" 📄 Download Resume",
@@ -77,18 +79,30 @@ st.write(
 # --- SKILLS ---
 st.write('\n')
 st.subheader("Hard Skills")
+
 st.write(
     """
-- 👩‍💻 Programming: Python (Scikit-learn, Pandas), SQL, Matlab
-- 📊 Data Visulization: PowerBi, MS Excel
-- 📚 Modeling: Logistic regression, linear regression, decition trees
-- 🗄️ Databases: MySQL
-- ⌨️ Tools: Git, Jupyter
-- ⌨️ Process modeling: HYSYS, DWSYM 
-- ⌨️ Fluid dynamic simulations: OpenFoam, Ansys (CFX E Fluent)
-
+- 👩‍💻 Programming: Python (Scikit-learn, Pandas, NumPy, TensorFlow, PyTorch), C++, SQL, Matlab
+- 📊 Data Visualization: Power BI, MS Excel, Matplotlib, Seaborn
+- 📚 Machine Learning & AI: Logistic Regression, Linear Regression, Decision Trees, Random Forest, Neural Networks, Deep Learning
+- 🗄️ Databases & Cloud: MySQL, PostgreSQL, AWS (S3, EC2, SageMaker)
+- ⌨️ Tools & Platforms: Git, Jupyter, VS Code, Docker
+- ⚙️ Process Modeling: HYSYS, DWSIM
+- 🌊 Fluid Dynamics Simulations: OpenFOAM, Ansys (CFX & Fluent)
 """
 )
+
+# --- EDUCATION ---
+st.write('\n')
+st.subheader("Education")
+st.write(
+    """
+- 🎓 **MSc. Computational Mechanics**, Federal University of Rio de Janeiro (UFRJ/COPPE)
+- 🎓 **BSc. Chemical Engineering**, University of Santiago de Chile (USACH)
+"""
+)
+
+
 
 
 # --- WORK HISTORY ---
