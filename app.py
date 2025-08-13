@@ -44,23 +44,54 @@ col1, col2 = st.columns([1, 3], gap="small")
 with col1:
     st.image(profile_pic, width=300)
 
+
 with col2:
     st.title(NAME)
-    st.markdown("<h4 style='font-size:22px;'> MSc. Computational Mechanics | Process Modeling & Optimization | Data Scientist </h4>", unsafe_allow_html=True)
-    st.write(DESCRIPTION)
-    st.download_button(
-        label=" 📄 Download Resume",
-        data=PDFbyte,
-        file_name=resume_file.name,
-        mime="application/octet-stream",
-    )
-    st.write("📫", EMAIL)
+    st.markdown("<h4 style='font-size:22px;'>MSc. Computational Mechanics | Process Modeling & Optimization | Data Scientist</h4>", unsafe_allow_html=True)
+    st.markdown(f"<p style='text-align: justify;'>{DESCRIPTION}</p>", unsafe_allow_html=True)
 
-# --- SOCIAL LINKS ---
-st.write('\n')
-cols = st.columns(len(SOCIAL_MEDIA))
-for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
-    cols[index].write(f"[{platform}]({link})")
+    # Cuatro botones en la misma fila
+    btn_col1, btn_col2, btn_col3, btn_col4 = st.columns(4) # gap pequeño para acercarlos
+
+    with btn_col1:
+        st.download_button(
+            label="📄 Resume",
+            data=PDFbyte,
+            file_name=resume_file.name,
+            mime="application/octet-stream",
+        )
+
+    with btn_col2:
+        st.markdown(
+            """
+            <a href='https://github.com/felipe77-CH' target='_blank'>
+                <button style='padding:8px 16px; font-size:16px; border-radius:5px; border:none; background-color:#333333; color:white; cursor:pointer;'>🐙 GitHub</button>
+            </a>
+            """,
+            unsafe_allow_html=True
+        )
+
+    with btn_col3:
+        st.markdown(
+            """
+            <a href='https://www.linkedin.com/in/felipemunoztoledo' target='_blank'>
+                <button style='padding:8px 16px; font-size:16px; border-radius:5px; border:none; background-color:#0077B5; color:white; cursor:pointer;'>💼 LinkedIn</button>
+            </a>
+            """,
+            unsafe_allow_html=True
+        )
+
+    with btn_col4:
+        st.markdown(
+            """
+            <a href='mailto:felipe.toledo@coc.ufrj.br'>
+                <button style='padding:8px 16px; font-size:16px; border-radius:5px; border:none; background-color:#28A745; color:white; cursor:pointer;'>✉️ Email</button>
+            </a>
+            """,
+            unsafe_allow_html=True
+        )
+
+
 
 # --- EXPERIENCE & QUALIFICATIONS ---
 st.write('\n')
