@@ -14,9 +14,8 @@ PAGE_TITLE = "Digital CV | FELIPE IGNACIO MUNHOZ TOLEDO"
 PAGE_ICON = ":love:"
 NAME = "Felipe Ignacio Muñoz Toledo"
 DESCRIPTION = """
-Chemical Engineer with an MSc. in Computational Mechanics, offering specialized consultancy services in modeling, simulation, and process optimization. With expertise in utilizing computational tools. 
+Chemical Engineer with an MSc in Computational Mechanics, offering specialized consultancy services in modeling, simulation, and process optimization. I have solid experience in environmental project management, process innovation, and advanced computational simulations. Currently, I lead environmental sanitation projects at Destra, managing teams, prioritizing tasks, and solving technical challenges, while developing process diagrams, technical documentation, and construction plans for industrial effluent treatment plants, including aerobic systems, dissolved air flotation (DAF), and membrane technologies. I have contributed to the successful implementation of leachate treatment plants and am developing patentable technologies aimed at nutrient recovery.
 """
-
 
 EMAIL = "felipe.toledo@coc.ufrj.br"
 
@@ -27,7 +26,7 @@ SOCIAL_MEDIA = {
 
 
 
-st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON, layout="centered",initial_sidebar_state="auto")
+st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON, layout="wide",initial_sidebar_state="auto")
 
 
 # --- LOAD CSS, PDF & PROFIL PIC ---
@@ -39,7 +38,8 @@ profile_pic = Image.open(profile_pic)
 
 
 # --- HERO SECTION ---
-col1, col2 = st.columns(2, gap="small")
+col1, col2 = st.columns([1, 3], gap="small") 
+
 with col1:
     st.image(profile_pic, width=250)
 
