@@ -134,8 +134,6 @@ st.write(
 )
 
 
-
-
 # --- WORK HISTORY ---
 st.write('\n')
 st.subheader("Work History")
