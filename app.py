@@ -113,15 +113,15 @@ st.subheader("Hard Skills")
 
 st.write(
     """
-- 👩‍💻 Programming: Python (Scikit-learn, Pandas, NumPy, TensorFlow, PyTorch), C++, SQL, Matlab
-- 📊 Data Visualization: Power BI, MS Excel, Matplotlib, Seaborn
-- 📚 Machine Learning & AI: Logistic Regression, Linear Regression, Decision Trees, Random Forest, Neural Networks, Deep Learning
-- 🗄️ Databases & Cloud: MySQL, PostgreSQL, AWS (S3, EC2, SageMaker)
-- ⌨️ Tools & Platforms: Git, Jupyter, VS Code, Docker
-- ⚙️ Process Modeling: HYSYS, DWSIM
-- 🌊 Fluid Dynamics Simulations: OpenFOAM, Ansys (CFX & Fluent)
+- 👩‍💻 **Programming & AI:** Python (Scikit-learn, Pandas, NumPy, TensorFlow, PyTorch), C++, SQL; AI agent development (LLMs, rules, planning, multi-agent), prompt engineering, API & database integration.
+- 📊 **Data & Analytics:** Data cleaning, preprocessing, transformation; relational & NoSQL databases; ETL/ELT (e.g., Dataform); data orchestration (Airflow, Dataflow); Power BI, Excel, Matplotlib, Seaborn.
+- 🧠 **Machine Learning & Deep Learning:** Supervised, unsupervised, reinforcement learning; logistic/linear regression, decision trees, Random Forest, neural networks; model training, evaluation, optimization, and deployment.
+- ☁️ **Cloud & Tools:** AWS, Azure, Google Cloud; Git, Jupyter, VS Code, Docker; Agile methodologies; teamwork & cross-functional collaboration.
+- ⚙️ **Process & Simulation:** Process modeling (HYSYS, DWSIM); CFD simulations (OpenFOAM, Ansys CFX & Fluent).
 """
 )
+
+
 
 # --- EDUCATION ---
 st.write('\n')
